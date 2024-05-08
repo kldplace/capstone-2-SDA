@@ -13,6 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "postTypes.csv",
 				"folderPath": "postTypes",
 				"container": "capstone-2"
 			},
