@@ -1,0 +1,23 @@
+{
+	"name": "Posts_myLake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "blobStorage-Datasets"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "Posts",
+				"container": "capstone-2"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
