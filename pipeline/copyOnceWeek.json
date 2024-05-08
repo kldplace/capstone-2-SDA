@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "cp_",
+				"name": "cp_postTypes_to_blobLake",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
