@@ -1,0 +1,9 @@
+{
+	"name": "Capstone-2-ADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2b30f23a-5cd5-4277-85f0-b2297caf6c77",
+		"tenantId": "c39ea9b1-7a5c-4435-9e03-8ff014e23352"
+	}
+}
