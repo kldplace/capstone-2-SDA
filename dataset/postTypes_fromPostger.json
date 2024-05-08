@@ -12,7 +12,9 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "postTypes",
+				"container": "capstone-2"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
