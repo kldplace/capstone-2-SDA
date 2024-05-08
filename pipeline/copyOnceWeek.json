@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "cp_",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -47,7 +47,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "postTypes_fromPostger",
+						"referenceName": "postTypes_myLake",
 						"type": "DatasetReference"
 					}
 				]
