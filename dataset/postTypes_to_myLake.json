@@ -1,0 +1,19 @@
+{
+	"name": "postTypes_to_myLake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_rds_postgreSQL",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "from-rds-to-myLake"
+		},
+		"annotations": [],
+		"type": "PostgreSqlV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "raw_st",
+			"table": "posttypes"
+		}
+	}
+}
