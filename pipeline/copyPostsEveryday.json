@@ -59,6 +59,33 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Databricks Notebooks",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "cp_Posts_to_myLake",
+						"dependencyConditions": [
+							"Skipped"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/201702443@stu.jazanu.edu.sa/capstone-2-SDA/Databricks-workspace/Model_deployment"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
