@@ -1,0 +1,17 @@
+{
+	"name": "top 5 topics",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://capstone2datalake.dfs.core.windows.net/capstone-2/BI/ml_result.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0'\n    ) AS top_topics\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
