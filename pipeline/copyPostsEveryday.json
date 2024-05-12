@@ -67,7 +67,7 @@
 					{
 						"activity": "cp_Posts_to_myLake",
 						"dependencyConditions": [
-							"Skipped"
+							"Succeeded"
 						]
 					}
 				],
