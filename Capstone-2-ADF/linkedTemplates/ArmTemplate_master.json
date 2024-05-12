@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "Capstone-2-ADF"
 		},
+		"AzureDatabricks_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks'"
+		},
 		"ls_blob_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_blob'"
@@ -19,9 +23,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_rds_postgreSQL'"
 		},
-		"AzureDatabricks_accessToken": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks'"
+		"AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0509-121049-z0ne3wuu"
 		},
 		"ls_rds_postgreSQL_properties_typeProperties_server": {
 			"type": "string",
@@ -34,10 +38,6 @@
 		"ls_rds_postgreSQL_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "postgres"
-		},
-		"AzureDatabricks_properties_typeProperties_existingClusterId": {
-			"type": "string",
-			"defaultValue": "0509-121049-z0ne3wuu"
 		},
 		"containerUri": {
 			"type": "string",
@@ -66,6 +66,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDatabricks_accessToken": {
+						"value": "[parameters('AzureDatabricks_accessToken')]"
+					},
 					"ls_blob_connectionString": {
 						"value": "[parameters('ls_blob_connectionString')]"
 					},
@@ -75,8 +78,8 @@
 					"ls_rds_postgreSQL_password": {
 						"value": "[parameters('ls_rds_postgreSQL_password')]"
 					},
-					"AzureDatabricks_accessToken": {
-						"value": "[parameters('AzureDatabricks_accessToken')]"
+					"AzureDatabricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks_properties_typeProperties_existingClusterId')]"
 					},
 					"ls_rds_postgreSQL_properties_typeProperties_server": {
 						"value": "[parameters('ls_rds_postgreSQL_properties_typeProperties_server')]"
@@ -86,9 +89,6 @@
 					},
 					"ls_rds_postgreSQL_properties_typeProperties_username": {
 						"value": "[parameters('ls_rds_postgreSQL_properties_typeProperties_username')]"
-					},
-					"AzureDatabricks_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('AzureDatabricks_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},

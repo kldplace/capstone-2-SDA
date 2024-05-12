@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "Capstone-2-ADF"
 		},
+		"AzureDatabricks_accessToken": {
+			"value": ""
+		},
 		"ls_blob_connectionString": {
 			"value": ""
 		},
@@ -14,8 +17,8 @@
 		"ls_rds_postgreSQL_password": {
 			"value": ""
 		},
-		"AzureDatabricks_accessToken": {
-			"value": ""
+		"AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0509-121049-z0ne3wuu"
 		},
 		"ls_rds_postgreSQL_properties_typeProperties_server": {
 			"value": "de-rds.czm23kqmbd6o.ca-central-1.rds.amazonaws.com"
@@ -25,9 +28,6 @@
 		},
 		"ls_rds_postgreSQL_properties_typeProperties_username": {
 			"value": "postgres"
-		},
-		"AzureDatabricks_properties_typeProperties_existingClusterId": {
-			"value": "0509-121049-z0ne3wuu"
 		},
 		"containerUri": {
 			"value": ""
